@@ -1,0 +1,14 @@
+.tasks {
+  margin: 2rem auto;
+  width: 90%;
+
+  .tasks-list {
+    width: 100%;
+    list-style: none;
+    margin-bottom: 4.25rem;
+  }
+
+  @media (orientation: landscape) {
+    max-width: 30vw;
+  }
+}

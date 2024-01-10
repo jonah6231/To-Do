@@ -1,0 +1,60 @@
+.task {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+  position: relative;
+  width: 100%;
+  min-height: 5vh;
+  font-size: 2.5vh;
+  color: #4d4d4d;
+  padding: 0.5rem 0.6rem 0.5rem 1rem;
+  border: 1px solid #ccc;
+  @media (orientation: landscape) {
+    max-width: 30vw;
+  }
+  &:hover {
+    background-color: #f5f5f5;
+  }
+
+  .remove {
+    opacity: 0;
+    color: rgb(223, 78, 62);
+    @media (max-width: 1023px) {
+      opacity: 1;
+    }
+  }
+  &:hover .remove {
+    opacity: 1;
+  }
+
+  .task-text {
+    display: block;
+    margin-left: 0.55vw;
+    width: 100%;
+    @media (max-width: 1023px) {
+      margin-left: 2vw;
+    }
+  }
+
+  .task-editing-input {
+    display: block;
+    margin-left: 0.55vw;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    font-size: 2.5vh;
+    text-decoration: none;
+    &:focus {
+      outline: none;
+      color: #4d4d4d;
+    }
+  }
+}
+
+.done {
+  text-decoration: line-through;
+  color: gainsboro;
+  background-color: whitesmoke;
+}

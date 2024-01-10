@@ -1,0 +1,40 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: inherit;
+  width: 3vh;
+  height: 3vh;
+  border: 1px solid #4d4d4d;
+  border-radius: 50%;
+  background: whitesmoke;
+  color: #4d4d4d;
+  cursor: pointer;
+  transition: 0.25s;
+  &:focus {
+    outline: none;
+  }
+
+  .svg {
+    width: 85%;
+    height: 85%;
+  }
+}
+
+.remove {
+  border-radius: 0%;
+  background-color: transparent;
+  border: none;
+}
+
+.toggle {
+  &:hover,
+  &:active {
+    background: #b3eed1;
+    border-color: #b3eed1;
+  }
+}
+
+.done {
+  opacity: 0.5;
+}
